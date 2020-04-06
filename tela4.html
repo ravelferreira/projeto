@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Tela</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--Inicio Nav-->
+    <div class="row">
+      <div class="col-sm">
+          <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top bg-warning">
+              <a class="animated bounceIn navbar-brand" href="#">
+                  <img src="../img/logo2.png" width="150" />
+              </a>
+              <div style="margin-right: 15% !important;" class="font-weight-bold text-white">ADMIN</div>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-text font-weight-bold">
+
+                  </span>
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div style="color: #000;" class="navbar-nav">
+                      <a class="animated bounceInDown faster nav-item nav-link active font-weight-bold"
+                          href="#">Painel <span class="sr-only">(current)</span></a>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdownMenuLink"
+                              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Impostos
+                          </a>
+                          <div class="dropdown-menu bg-warning" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item font-weight-bold" href="#das">DAS</a>
+                              <a class="dropdown-item font-weight-bold" href="#dare">DARE</a>
+                          </div>
+                      </li><a class="animated bounceInDown nav-item nav-link font-weight-bold"
+                          href="#relatorio">Relatório</a>
+                      <a class="animated bounceInDown nav-item nav-link font-weight-bold disabled"
+                          href="#boletos">Boletos</a>
+                      <a class="animated bounceInDown nav-item nav-link font-weight-bold disabled"
+                          href="#nfse">NFSe</a>
+                      <a class="animated bounceInDown nav-item nav-link font-weight-bold" href="#sair">Sair</a>
+                  </div>
+              </div>
+          </nav>
+      </div>
+  </div>
+  <!--Final da Nav-->
+  <div class="row">
+      <div class="col-sm-12">
+          <br />
+      </div>
+
+      <div class="col-sm-1">
+      </div>
+
+      <div class="col-sm-3">
+          <div class="card">
+              <div class="card-body">
+                  <h3>Adriano Leite</h3>
+                  <p>Contador<br /> adriano@gruponativo.com.br
+                  </p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-sm-1">
+      </div>
+
+      <div class="col-sm-6">
+          <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Buscar por cliente..."
+                  aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button">Buscar</button>
+              </div>
+          </div>
+
+          <div class="btn-toolbar" role="toolbar">
+              <div class="btn-group mr-2" role="group">
+                  <button type="button" class="btn btn-outline-warning text-dark" data-toggle="modal"
+                      data-target="#cadastro">Cadastrar cliente</button>
+                  <button type="button" class="btn btn-outline-warning text-dark" data-toggle="modal"
+                      data-target="#alterar">Alterar dados</button>
+                  <button type="button" class="btn btn-outline-warning text-dark" data-toggle="modal"
+                      data-target="#alterarsenha">Alterar senha</button>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-sm-12">
+          <br />
+      </div>
+
+
+      <!--Incio Container Formulario-->
+
+      <div class="container-fluid">
+        <div class="col-md-12">
+            <div class="container bg-light">
+  
+                <!--Inicio parte 1-->
+  
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <form class="needs-validation" novalidate><br>
+                            <h4><b>Preencha os Dados</b></h4><br>
+                            <div class="form-row">
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationTooltip01">Código da Cidade: *</label>
+                                    <input type="text" class="form-control" id="validationTooltip01"
+                                        placeholder="00000000" required>
+                                    <div class="valid-tooltip">
+  
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationTooltip02">CPF/CNPJ :</label>
+                                    <input type="text" class="form-control" id="validationTooltip02" placeholder="00.000.000/0000-00"
+                                        required>
+                                    <div class="valid-tooltip">
+  
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationTooltip02">Imposto Prestador:</label>
+                                    <input type="text" class="form-control" id="validationTooltip02" placeholder="R$ 0,00"
+                                        required>
+                                    <div class="valid-tooltip">
+  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+  
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationTooltip03">Serie Prestação:</label>
+                                    <input type="text" class="form-control" placeholder="00000" required>
+                                    <div class="invalid-tooltip">
+                                    </div>
+                                </div>
+  
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationTooltip05">Versão:</label>
+                                    <input type="text" class="form-control"placeholder=""
+                                        required>
+                                    <div class="invalid-tooltip">
+                                    </div>
+                                </div>
+  
+                            </div>
+                            <button class="btn btn-primary align-bottom" type="btn">Ir Para o Próximo Passo
+                            </button>
+                        </form>
+  
+                    </div>
+  
+                   <!--Fim parte 1-->
+  
+                    <br>
+                </div>
+  
+            </div>
+  
+            <!-- Fim Navegação -->
+  
+        </div>
+        </div>
+  
+        <!--Area dos Botões-->
+        <br>
+        <div class="col-sm-12">
+            <div class="container">
+                <button type="button" class="btn btn-info btn-sm">Voltar</button>
+                <button type="button" class="btn btn-info btn-sm ml-2">Limpar Dados</button>
+            </div>
+        </div>
+
+  </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--Script para colocar barra na data-->
+
+      <!-- Fim Script para colocar barra na data-->
+
+  </body>
+</html>
